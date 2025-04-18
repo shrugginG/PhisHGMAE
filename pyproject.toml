@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "dgl",
     "loguru>=0.7.3",
     "scikit-learn>=1.6.1",
     "scipy>=1.15.2",
@@ -16,3 +17,6 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 exclude = ["logs*", "data*", "models*", "results*", "embeddings*"]
+
+[tool.uv.sources]
+dgl = { url = "https://data.dgl.ai/wheels/torch-2.4/cu121/dgl-2.4.0%2Bcu121-cp312-cp312-manylinux1_x86_64.whl" }
