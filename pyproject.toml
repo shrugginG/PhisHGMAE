@@ -13,3 +13,6 @@ dependencies = [
     "torchaudio==2.3.1",
     "torchvision==0.18.1",
 ]
+
+[tool.setuptools.packages.find]
+exclude = ["logs*", "data*", "models*", "results*", "embeddings*"]
